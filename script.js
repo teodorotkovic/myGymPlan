@@ -56,13 +56,62 @@ const dayTitle = document.getElementById('day-title');
 let currentDay = null;
 let currentExerciseId = null;
 
-function formatExerciseItem(ex)
-{
+
+// Keys for checkmarks
+function storageCheckKey(day, exId) {
+    return `gym_done__${day}__${exId}`;
+}
+
+// Reset checkmarks every Monday
+(function resetCheckmarksOnMonday() {
+    const lastReset = localStorage.getItem("gym_last_reset");
+    const today = new Date();
+    const isMonday = today.getDay() === 1; // Monday=1, Sunday=0
+
+    if (isMonday && lastReset !== today.toDateString()) {
+        // clear all gym_done__ keys
+        Object.keys(localStorage).forEach(k => {
+            if (k.startsWith("gym_done__")) localStorage.removeItem(k);
+        });
+        localStorage.setItem("gym_last_reset", today.toDateString());
+    }
+})();
+
+function formatExerciseItem(ex) {
     const div = document.createElement('div');
     div.className = 'exercise-item';
     div.dataset.id = ex.id;
-    div.innerHTML = `<div class="exercise-title">${ex.title}</div><div class="meta">${ex.meta || ''}</div>`;
-    div.addEventListener('click', () => selectExercise(ex.id));
+
+    const done = localStorage.getItem(storageCheckKey(currentDay || "pondeli", ex.id));
+
+    div.innerHTML = `
+        <div class="exercise-content">
+            <div>
+                <div class="exercise-title">${ex.title}</div>
+                <div class="meta">${ex.meta || ''}</div>
+            </div>
+            <button class="checkmark ${done ? 'active' : ''}" title="Označit jako hotové">✓</button>
+        </div>
+    `;
+
+    // kliknutí na název → detail
+    div.querySelector(".exercise-title").addEventListener('click', () => selectExercise(ex.id));
+    div.querySelector(".meta").addEventListener('click', () => selectExercise(ex.id));
+
+    // kliknutí na fajfku → toggle
+    const btn = div.querySelector(".checkmark");
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const key = storageCheckKey(currentDay, ex.id);
+        if (btn.classList.contains("active")) {
+            localStorage.removeItem(key);
+            btn.classList.remove("active");
+        } else {
+            localStorage.setItem(key, "1");
+            btn.classList.add("active");
+        }
+    });
+
     return div;
 }
 
