@@ -64,7 +64,6 @@ p.lead {
 .days {
   display: flex;
   flex-wrap: wrap;
-  background: #071029;
   gap: 10px;
   margin: 18px 0;
   position: sticky;
@@ -157,6 +156,7 @@ p.lead {
 
 .media img {
   width: 210px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -261,32 +261,31 @@ footer {
     font-size: 15px;
     padding: 14px;
   }
-}/*# sourceMappingURL=style.css.map */
-
+}
 .exercise-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .checkmark {
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: var(--muted);
-    background: transparent;
-    transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--muted);
+  background: transparent;
+  transition: all 0.2s ease;
 }
 
 .checkmark.active {
-    background: var(--accent);
-    color: #001219;
-    border-color: var(--accent);
-}
+  background: var(--accent);
+  color: #001219;
+  border-color: var(--accent);
+}/*# sourceMappingURL=style.css.map */
