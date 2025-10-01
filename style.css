@@ -1,0 +1,265 @@
+:root {
+  --bg: #0f1724;
+  --card: #111827;
+  --accent: #60a5fa;
+  --muted: #9ca3af;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background: #071029;
+  color: #e6eef8;
+  padding: 16px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #4ade80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #042033;
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+p.lead {
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  background: #071029;
+  gap: 10px;
+  margin: 18px 0;
+  position: sticky;
+  top: 0;
+  padding: 8px 0;
+  z-index: 5;
+}
+
+.btn {
+  flex: 1;
+  min-width: 90px;
+  text-align: center;
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 12px;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn.active {
+  background: var(--accent);
+  color: #001219;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exercise-item {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px dashed rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.exercise-item:hover {
+  transform: translateX(4px);
+}
+
+.exercise-item.active {
+  background: rgba(255, 255, 255, 0.04);
+  border-style: solid;
+}
+
+.exercise-title {
+  font-weight: 700;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.media {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.media img {
+  width: 210px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.desc {
+  flex: 1;
+  min-width: 220px;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.video-link {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: inherit;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.save-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  background: var(--accent);
+  color: #022;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: opacity 0.2s ease;
+}
+
+.save-btn:hover {
+  opacity: 0.85;
+}
+
+footer {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Mobile optimizations */
+@media (max-width: 880px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .media {
+    flex-direction: column;
+  }
+  .media img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 12px 8px;
+  }
+  .exercise-item {
+    font-size: 15px;
+    padding: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

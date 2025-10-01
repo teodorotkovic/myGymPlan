@@ -1,0 +1,60 @@
+<!--
+Single-file personal website for a gym plan (index.html)
+- Includes compiled CSS and original SCSS (below) - you can copy SCSS into your preprocessor if you want to edit styles.
+- Uses localStorage to save per-exercise comments so it works on GitHub Pages (static site).
+- UI language: Czech. Replace placeholder images / video links with your preferred ones.
+-->
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Můj tréninkový plán</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">GYM</div>
+            <div>
+                <h1>Můj tréninkový plán</h1>
+                <p class="lead">Vyber den, zvol cvik a ulož si poznámku k jednotlivému cviku (uloženo v prohlížeči).</p>
+            </div>
+        </header>
+
+
+        <div class="days">
+            <button class="btn" data-day="pondeli">1. den</button>
+            <button class="btn" data-day="streda">2. den</button>
+            <button class="btn" data-day="patek">3. den</button>
+        </div>
+
+
+        <div class="layout">
+            <aside class="card">
+                <h3 id="day-title">Vyber den</h3>
+                <div class="list" id="exercises-list">
+                    <small class="meta">Zvol den pro zobrazení cviků.</small>
+                </div>
+            </aside>
+
+
+            <main class="card">
+                <div id="exercise-detail" class="detail">
+                    <div class="placeholder">
+                        <h3>Vyber cvik</h3>
+                        <p class="meta">Po kliknutí na cvik se zobrazí popis, obrázek, odkazy na video a pole pro
+                            poznámky.</p>
+                    </div>
+                </div>
+                <footer>
+                    <small>Statická stránka — komentáře se ukládají pouze do vašeho prohlížeče (localStorage).</small>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
