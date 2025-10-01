@@ -157,7 +157,6 @@ p.lead {
 
 .media img {
   width: 210px;
-  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;

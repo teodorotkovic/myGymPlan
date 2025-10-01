@@ -19,30 +19,30 @@ const DATA = {
         title: '2. den — ramena, prsa, biceps + břicho',
         description: 'Trénink: Všechny cviky do technického selhání!',
         exercises: [
-            { id: 'tlak_stroj', title: 'Tlak v sedě na stroji (ramena)', meta: '4×10', desc: 'Ramena tlač dolů, lopatky k sobě. Kontroluj rozsah.', img: "images/day2/", videos: [{ title: 'Shoulder press machine', url: 'https://www.youtube.com/results?search_query=shoulder+press+machine' }] },
-            { id: 'rozpazovani', title: 'Rozpažování (ramena)', meta: '3×10–15', desc: 'Nesmí vyjíždět k uším; kontroluj negativní fázi.', img: "images/day2/", videos: [{ title: 'Lateral raises', url: 'https://www.youtube.com/results?search_query=lateral+raises' }] },
-            { id: 'incline', title: 'Incline bench na multipressu', meta: '4×10', desc: 'Ramena tlačit dolů a lopatky k sobě. Kontroluj stabilitu.', img: "images/day2/", videos: [{ title: 'Incline bench', url: 'https://www.youtube.com/results?search_query=incline+bench+press' }] },
-            { id: 'tlaky_jednorucky', title: 'Tlaky jednoručkami v leže', meta: '3×10', desc: 'Ramena tlačit dolů, lopatky k sobě.', img: "images/day2/", videos: [{ title: 'Dumbbell bench press', url: 'https://www.youtube.com/results?search_query=dumbbell+bench+press' }] },
-            { id: 'rozpazovani_kladky', title: 'Rozp. na peck deck / kladky', meta: '3×10', desc: 'Soustředíme se na protažení svalu, negativní fáze pomalejší.', img: "images/day2/", videos: [{ title: 'Pec deck', url: 'https://www.youtube.com/results?search_query=pec+deck' }] },
-            { id: 'biceps_kladka', title: 'Bicepsový zdvih podhmatem (kladka)', meta: '3×12', desc: 'Lopatky u sebe, ramena dolů, kontroluj pohyb.', img: "images/day2/", videos: [{ title: 'Cable biceps curl underhand', url: 'https://www.youtube.com/results?search_query=cable+biceps+curl+underhand' }] },
-            { id: 'biceps_cinka', title: 'Bicepsový zdvih nadhmatem (činka)', meta: '3×12', desc: 'Kontrolované tempo, plný rozsah.', img: "images/day2/", videos: [{ title: 'Barbell reverse curl', url: 'https://www.youtube.com/results?search_query=reverse+barbell+curls' }] },
-            { id: 'plank_knee', title: 'Plank - křížem přitahování kolena', meta: '4×15+15', desc: 'Pozice planku, ruce pod rameny. Křížem přitahuj koleno k loktu.', img: "images/day2/", videos: [{ title: 'Plank knee to elbow', url: 'https://www.youtube.com/results?search_query=plank+knee+to+elbow' }] }
+            { id: 'tlak_stroj', title: 'Tlak v sedě na stroji (ramena)', meta: '4×10', desc: 'Ramena tlač dolů, lopatky k sobě. Kontroluj rozsah.', img: "images/day2/1.jpg", videos: [{ title: 'Shoulder press machine', url: 'https://www.youtube.com/results?search_query=shoulder+press+machine' }] },
+            { id: 'rozpazovani', title: 'Rozpažování (ramena)', meta: '3×10–15', desc: 'Nesmí vyjíždět k uším; kontroluj negativní fázi.', img: "images/day2/2.webp", videos: [{ title: 'Lateral raises', url: 'https://www.youtube.com/results?search_query=lateral+raises' }] },
+            { id: 'incline', title: 'Incline bench na multipressu', meta: '4×10', desc: 'Ramena tlačit dolů a lopatky k sobě. Kontroluj stabilitu.', img: "images/day2/3.webp", videos: [{ title: 'Incline bench', url: 'https://www.youtube.com/results?search_query=incline+bench+press' }] },
+            { id: 'tlaky_jednorucky', title: 'Tlaky jednoručkami v leže', meta: '3×10', desc: 'Ramena tlačit dolů, lopatky k sobě.', img: "images/day2/4.webp", videos: [{ title: 'Dumbbell bench press', url: 'https://www.youtube.com/results?search_query=dumbbell+bench+press' }] },
+            { id: 'rozpazovani_kladky', title: 'Rozp. na peck deck / kladky', meta: '3×10', desc: 'Soustředíme se na protažení svalu, negativní fáze pomalejší.', img: "images/day2/5.gif", videos: [{ title: 'Pec deck', url: 'https://www.youtube.com/results?search_query=pec+deck' }] },
+            { id: 'biceps_kladka', title: 'Bicepsový zdvih podhmatem (kladka)', meta: '3×12', desc: 'Lopatky u sebe, ramena dolů, kontroluj pohyb.', img: "images/day2/6.webp", videos: [{ title: 'Cable biceps curl underhand', url: 'https://www.youtube.com/results?search_query=cable+biceps+curl+underhand' }] },
+            { id: 'biceps_cinka', title: 'Bicepsový zdvih nadhmatem (činka)', meta: '3×12', desc: 'Kontrolované tempo, plný rozsah.', img: "images/day2/7.webp", videos: [{ title: 'Barbell reverse curl', url: 'https://www.youtube.com/results?search_query=reverse+barbell+curls' }] },
+            { id: 'plank_knee', title: 'Plank - křížem přitahování kolena', meta: '4×15+15', desc: 'Pozice planku, ruce pod rameny. Křížem přitahuj koleno k loktu.', img: "images/day2/8.webp", videos: [{ title: 'Plank knee to elbow', url: 'https://www.youtube.com/results?search_query=plank+knee+to+elbow' }] }
         ]
     },
     patek: {
         title: '3. den — záda, triceps + břicho',
         description: 'Trénink: Všechny cviky do technického selhání!',
         exercises: [
-            { id: 'trx', title: 'Přítahy na TRX', meta: '3×10–15', desc: 'Od uvolnění do stažení lopatek. Kontroluj dýchání.', img: "images/day3/", videos: [{ title: 'TRX rows', url: 'https://www.youtube.com/results?search_query=trx+rows' }] },
-            { id: 'osy_predklon', title: 'Přítahy osy v předklonu', meta: '4×5–10', desc: 'Rovná záda, dýchání do břicha.', img: "images/day3/", videos: [{ title: 'Bent over barbell rows', url: 'https://www.youtube.com/results?search_query=bent+over+barbell+rows' }] },
-            { id: 'stahovani_kladky', title: 'Stahování kladky nadhmatem', meta: '3×8–15', desc: 'Práce lopatek, kontrolovaný pohyb.', img: "images/day3/", videos: [{ title: 'Lat pulldown wide', url: 'https://www.youtube.com/results?search_query=lat+pulldown+wide' }] },
-            { id: 'pritahovani_sed', title: 'Přitahování kladky v sedě (široko)', meta: '3×8–12', desc: 'Mírný předklon, rovná záda.', img: "images/day3/", videos: [{ title: 'Seated cable rows', url: 'https://www.youtube.com/results?search_query=seated+cable+rows' }] },
-            { id: 'pritahovani_podhmat', title: 'Přitahování v sedě podhmatem (one arm)', meta: '3×10+10', desc: 'Po jedné ruce, soustřeď se na stah lopatky.', img: "images/day3/", videos: [{ title: 'One arm seated row', url: 'https://www.youtube.com/results?search_query=one+arm+row+machine' }] },
-            { id: 'francouzsky', title: 'Francouzský tlak v leže', meta: '4×8–12', desc: 'Kontrolované natahování tricepsu a plné protažení.', img: "images/day3/", videos: [{ title: 'Lying triceps extension', url: 'https://www.youtube.com/results?search_query=lying+triceps+extension' }] },
-            { id: 'triceps_kladka', title: 'Tricepsové stahování kladky (podhmat)', meta: '3×10–12', desc: 'Lopatky k sobě, ramena dolů.', img: "images/day3/", videos: [{ title: 'Reverse grip triceps pushdown', url: 'https://www.youtube.com/results?search_query=reverse+grip+triceps+pushdown' }] },
-            { id: 'kickback', title: 'Kick back (zapažování)', meta: '3×10–12', desc: 'Kontrolované vedení, drž loket stabilní.', img: "images/day3/", videos: [{ title: 'Triceps kickback', url: 'https://www.youtube.com/results?search_query=triceps+kickback' }] },
-            { id: 'plank_forearm', title: 'Plank na předloktí', meta: '2×30+s', desc: 'Drž tělo v přímce, pevné jádro.', img: "images/day3/", videos: [{ title: 'Forearm plank', url: 'https://www.youtube.com/results?search_query=forearm+plank' }] },
-            { id: 'side_plank', title: 'Side plank', meta: '2×30+30s', desc: 'Bokem nahoru, drž pánev zvednutou.', img: "images/day3/", videos: [{ title: 'Side plank', url: 'https://www.youtube.com/results?search_query=side+plank' }] }
+            { id: 'trx', title: 'Přitahování kladky v sedě', meta: '3×10–15', desc: 'Táhni kladku k tělu, ramena dozadu a lopatky stahuj k sobě. Drž rovná záda a kontroluj pohyb.', img: "images/day3/1.webp", videos: [{ title: 'Seated cable row', url: 'https://www.youtube.com/results?search_query=seated+cable+row' }] },
+            { id: 'osy_predklon', title: 'Přítahy osy v předklonu', meta: '4×5–10', desc: 'Rovná záda, dýchání do břicha.', img: "images/day3/2.webp", videos: [{ title: 'Bent over barbell rows', url: 'https://www.youtube.com/results?search_query=bent+over+barbell+rows' }] },
+            { id: 'stahovani_kladky', title: 'Stahování kladky nadhmatem', meta: '3×8–15', desc: 'Práce lopatek, kontrolovaný pohyb.', img: "images/day3/3.jpg", videos: [{ title: 'Lat pulldown wide', url: 'https://www.youtube.com/results?search_query=lat+pulldown+wide' }] },
+            { id: 'pritahovani_sed', title: 'Přitahování kladky v sedě (široko)', meta: '3×8–12', desc: 'Mírný předklon, rovná záda.', img: "images/day3/4.gif", videos: [{ title: 'Seated cable rows', url: 'https://www.youtube.com/results?search_query=seated+cable+rows' }] },
+            { id: 'pritahovani_podhmat', title: 'Přitahování v sedě podhmatem (one arm)', meta: '3×10+10', desc: 'Po jedné ruce, soustřeď se na stah lopatky.', img: "images/day3/5.jpg", videos: [{ title: 'One arm seated row', url: 'https://www.youtube.com/results?search_query=one+arm+row+machine' }] },
+            { id: 'francouzsky', title: 'Francouzský tlak v leže', meta: '4×8–12', desc: 'Kontrolované natahování tricepsu a plné protažení.', img: "images/day3/6.jpg", videos: [{ title: 'Lying triceps extension', url: 'https://www.youtube.com/results?search_query=lying+triceps+extension' }] },
+            { id: 'triceps_kladka', title: 'Tricepsové stahování kladky (podhmat)', meta: '3×10–12', desc: 'Lopatky k sobě, ramena dolů.', img: "images/day3/7.webp", videos: [{ title: 'Reverse grip triceps pushdown', url: 'https://www.youtube.com/results?search_query=reverse+grip+triceps+pushdown' }] },
+            { id: 'kickback', title: 'Kick back (zapažování)', meta: '3×10–12', desc: 'Kontrolované vedení, drž loket stabilní.', img: "images/day3/8.webp", videos: [{ title: 'Triceps kickback', url: 'https://www.youtube.com/results?search_query=triceps+kickback' }] },
+            { id: 'plank_forearm', title: 'Plank na předloktí', meta: '2×30+s', desc: 'Drž tělo v přímce, pevné jádro.', img: "images/day3/9.webp", videos: [{ title: 'Forearm plank', url: 'https://www.youtube.com/results?search_query=forearm+plank' }] },
+            { id: 'side_plank', title: 'Side plank', meta: '2×30+30s', desc: 'Bokem nahoru, drž pánev zvednutou.', img: "images/day3/10.png", videos: [{ title: 'Side plank', url: 'https://www.youtube.com/results?search_query=side+plank' }] }
         ]
     }
 };
@@ -95,8 +95,7 @@ function formatExerciseItem(ex) {
     `;
 
     // kliknutí na název → detail
-    div.querySelector(".exercise-title").addEventListener('click', () => selectExercise(ex.id));
-    div.querySelector(".meta").addEventListener('click', () => selectExercise(ex.id));
+    div.querySelector(".exercise-content").addEventListener('click', () => selectExercise(ex.id));
 
     // kliknutí na fajfku → toggle
     const btn = div.querySelector(".checkmark");
